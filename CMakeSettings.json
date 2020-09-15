@@ -1,0 +1,24 @@
+﻿{
+  "environments": [
+    {
+      "environment": "xtensa",
+      "IDF_TOOLS_PATH": "C:/Users/igrok/.espressif",
+      "PATH": "${env.IDF_TOOLS_PATH}/tools/xtensa-esp32-elf/esp-2020r1-8.2.0/xtensa-esp32-elf/bin;${env.PATH}"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "xtensa",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "xtensa" ],
+      "buildRoot": "${projectDir}/build",
+      "installRoot": "${projectDir}/build/install",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "intelliSenseMode": "linux-gcc-arm",
+      "cmakeToolchain": "${projectDir}/toolchain-esp32.cmake"
+    }
+  ]
+}
